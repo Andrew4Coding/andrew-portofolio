@@ -8,7 +8,6 @@ import { SeeCursorAnimation } from "../util/SeeCursor"
 export const AboutMeSection: React.FC = () => {
     return (
         <Reveal>
-
             <section className="h-screen p-10 lg:p-40 flex flex-col gap-5" id='about-me'>
                 <div className="flex flex-col gap-5">
                     <h1 className="text-xl lg:text-4xl font-bold">🙋‍♂️ About Me</h1>
