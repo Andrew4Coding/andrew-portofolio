@@ -8,7 +8,7 @@ export const ExperienceCard: React.FC<experienceCardInterface> = ({
     return (
         <Reveal className="">
             <div className="w-full border-l-4 border-white flex">
-                <Image src={`/exp-images/${item.companyLogo}`} alt="" height={20} width={20} className="-left-6 top-1.5 relative w-10 h-10 p-2.5 rounded-full shadow-md object-contain bg-white" />
+                <Image src={`/exp-images/${item.companyLogo}`} alt="" height={20} width={20} className="-left-[1.4rem] top-1.5 relative w-10 h-10 p-2.5 rounded-full shadow-md object-contain bg-white" />
                 <div className="w-full h-full py-2.5 flex flex-col gap-2">
 
                     <h2 className="font-bold text-lg text-white">{item.title}</h2>
