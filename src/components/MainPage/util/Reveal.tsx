@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { revealInterface } from "./interface"
 import { useInView, motion, useAnimation } from "framer-motion";
 
-export const Reveal: React.FC<revealInterface> = ({ children }) => {
+export const Reveal: React.FC<revealInterface> = ({ children, className }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -17,7 +17,6 @@ export const Reveal: React.FC<revealInterface> = ({ children }) => {
     })
 
     return (
-        <div className="" ref={ref}>
             <motion.div
                 variants={{
                     hidden: { opacity: 0, y: 75 },
@@ -31,10 +30,11 @@ export const Reveal: React.FC<revealInterface> = ({ children }) => {
                     delayChildren: 0.3,
                     staggerChildren: 0.2
                 }}
+                className={className}
+                ref={ref}
             >
                 {children}
             </motion.div>
-        </div>
     )
 }
 

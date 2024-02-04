@@ -18,7 +18,8 @@ export interface inputFieldInterface {
     title: 'Name' | 'Email' | 'Subject' | 'Message',
     placeholder: string,
     data: sendMessageStructure,
-    setData: Dispatch<SetStateAction<any>>
+    setData: Dispatch<SetStateAction<any>>,
+    name: string,
 }
 
 export interface experienceCardInterface {
@@ -34,5 +35,9 @@ export interface experienceCardInterface {
 export interface carouselCardInterface {
     text: string,
     image: string
+}
+
+export interface sectionTitleInterface {
+    children?: React.ReactNode,
 }
 

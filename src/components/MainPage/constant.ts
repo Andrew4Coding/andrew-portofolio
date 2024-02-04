@@ -45,33 +45,47 @@ export const sectionData = [
 
 export const ProjectsData: projectsDataInterface[] = [
     {
-        name: 'Betis Open Recruitment Web',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        skills: ['react', 'nextjs', 'mongo'],
-        link: '',
-        image: ''
+        name: 'Portfolio Website',
+        description: "This website serves as a platform to share insights into my personal journey and document the progress I've made throughout my exploration of the dynamic world of software engineering.",
+        skills: ['nextjs.svg', 'typescript.svg', 'chakra.svg', 'framer.svg', 'tailwind.svg'],
+        link: 'https://github.com/Andrew4Coding/andrew-portofolio',
+        image: 'portfolio.png'
     },
     {
-        name: 'Betis Fasilkom UI 2024 Web',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        skills: ['react', 'nextjs', 'mongo'],
-        link: '',
-        image: ''
+        name: 'BETIS Fasilkom UI 2024 Website',
+        description: 'I contributed to the creation of this website during BETIS FASILKOM UI 2024 committee, focusing on the course list section. It was a learning experience in Git and Rest API.',
+        skills: ['nextjs.svg', 'typescript.svg',  'tailwind.svg', 'git.svg'],
+        link: 'https://betis.cs.ui.ac.id/',
+        image: 'betis.png'
     },
     {
-        name: 'Portofolio Website',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        skills: ['react', 'nextjs', 'mongo'],
-        link: '',
-        image: ''
+        name: 'HORUS Mobile App',
+        description: "I developed this application during the HACKFEST GSC 2023 event, where I took on the role of a Hipster, responsible for designing UI/UX and working on the front-end of the application.",
+        skills: ['dart.svg', 'flutter.svg', 'firebase.svg', 'figma.svg'],
+        link: 'https://github.com/Andrew4Coding/horus-frontend',
+        image: 'horus.png'
     },
     {
-        name: 'Horus App',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        skills: ['react', 'nextjs', 'mongo'],
-        link: '',
-        image: ''
-    }
+        name: 'BETIS Fasilkom UI 2024 Open Recruitment Website',
+        description: "This website was created as part of the selection process for the BETIS FASILKOM UI 2024 committee, specifically in the Website Development Team. During this project, I gained valuable insights into fetch logic in React JS.",
+        skills: ['react.svg', 'tailwind.svg', 'framer.svg', 'vite.svg'],
+        link: 'https://github.com/Andrew4Coding/betis-app',
+        image: 'betis-oprec.png'
+    },
+    {
+        name: 'Simple TODO List Website',
+        description: "This website was created as part of my application for the Software Engineer position in COMPFEST 16 FASILKOM UI committee selection. Throughout this project, I gained extensive knowledge in Express JS and database management.",
+        skills: ['react.svg', 'nextjs.svg', 'tailwind.svg', 'express.svg', 'firebase.svg'],
+        link: 'https://github.com/Andrew4Coding/CFCLOSEREC-FE',
+        image: 'todo.png'
+    },
+    {
+        name: 'GAUNG Search',
+        description: "This website was created to facilitate CS UI 23 students in finding classmates for specific courses. I learned a lot about the fundamentals of React JS during this project.",
+        skills: ['react.svg'],
+        link: 'https://github.com/Andrew4Coding/horus-frontend',
+        image: 'gaung.png'
+    },
 ];
 
 export const mySkills = [
@@ -157,11 +171,19 @@ export const mySkills = [
                 name: 'PostgreSQL',
                 image: 'postgre',
             },
+            {
+                name: 'Firebase',
+                image: 'firebase'
+            }
         ]
     },
     {
         tabName: 'Other',
         skills: [
+            {
+              name: "Figma",
+              image: 'figma' 
+            },
             {
                 name: 'Vite JS',
                 image: 'vite',
@@ -181,24 +203,23 @@ export const mySkills = [
 export const myExperiences = [
     {
         title: "Betis Fasilkom UI",
-        description: "Webdev Staff",
+        description: "Website Development Staff",
         date: "September 2023 - Now",
         companyLogo: 'betis.svg',
         details: [
-            'Lorem Ipsum',
-            'Lorem Ipsum',
-            'Lorem Ipsum',
+            'Participated in the development of the BETIS FASILKOM UI 2024 website',
+            'Actively involved in weekly meetings and sync-ups',
+            'Gained a deeper understanding of concepts in Next JS, Rest API, and Git System'
         ]
     },
     {
-        title: "Pekan Ristek Webdev SIG",
+        title: "Pekan RISTEK Website Development Open Class",
         description: "Participant",
-        date: "December 2024",
+        date: "November 2023",
         companyLogo: 'ristek.png',
         details: [
-            'Lorem Ipsum',
-            'Lorem Ipsum',
-            'Lorem Ipsum',
+            'Progressively learn Javascript frameworks and apply them in personal website development projects',
+            'Actively Participating in each meeting',
         ]
     },
     {
@@ -207,9 +228,8 @@ export const myExperiences = [
         date: "September 2023 - Now",
         companyLogo: 'gdsc.jpg',
         details: [
-            'Lorem Ipsum',
-            'Lorem Ipsum',
-            'Lorem Ipsum',
+            'Participated in weekly Study Jam sessions',
+            'Contributed to Hackfest 2023, progressing through the submission of the third phase',
         ]
     },
     {
@@ -218,24 +238,24 @@ export const myExperiences = [
         date: "September 2023 - December 2023",
         companyLogo: 'pkkm.png',
         details: [
-            'Lorem Ipsum',
-            'Lorem Ipsum',
-            'Lorem Ipsum',
+            'Created a market research survey form to analyze the interests and preference of Fasilkom Students',
+            'Actively participating in managing the division team to work on the agenda set by BEM Fasilkom UI',
+            'Actively attending all division meetings and discussions',
         ]
     },
 ];
 
 export const AboutMeImage = [
     {
-        text: 'This is me at CS UI 23 Gathering',
+        text: 'This is me opening the CS UI 23 Gathering as PMB Coordinator of CS UI 23',
         image: 'welcome.jpg'
     },
     {
-        text: 'This is me at CS UI 23 Gathering',
-        image: 'welcome.jpg'
+        text: 'This is me presenting about the University of Indonesia at the Sasambo UI Goes to NTB event',
+        image: 'sasambo.jpeg'
     },
     {
-        text: 'This is me at CS UI 23 Gathering',
-        image: 'welcome.jpg'
+        text: 'This is me successfully organizing a CS UI 23 high school themed cosplay',
+        image: 'sma.jpg'
     }
 ]

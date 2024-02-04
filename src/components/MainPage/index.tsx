@@ -12,7 +12,7 @@ import { ScrollIndicator } from "./util/ScrollIndicator"
 export const MainPage: React.FC = () => {
     return (
         <>
-            <Background />        
+            <Background />
             <div className="relative z-50">
                 {/* <SidebarNavigation /> */}
                 <ScrollIndicator />
