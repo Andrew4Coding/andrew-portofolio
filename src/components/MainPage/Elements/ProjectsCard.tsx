@@ -10,13 +10,15 @@ export const ProjectsCard: React.FC<{ data: projectsDataInterface }> = ({ data }
 
     return (
         <Reveal>
-            <div className="shadow-lg bg-black/50 duration-1000 hover:scale-[101%] w-full p-5 flex flex-col gap-5 rounded-xl">
+            <div className="shadow-lg bg-black/50 duration-1000 hover:scale-[101%] w-full p-5 flex flex-col gap-5 rounded-xl h-full">
                 <div className="flex flex-col gap-5">
                     <div className="h-[8rem] lg:h-[15rem] w-full rounded-xl">
                         <Image src={`/projects-images/${image}`} width={1000} height={1000} alt="" className="object-cover h-full object-center rounded-md aspect-video" />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <span className="font-semibold text-lg lg:text-2xl lg:min-h-[4rem] text-white">{name}</span>
+                        <span className="font-semibold text-lg lg:text-2xl lg:min-h-[6rem] text-white">
+                            {name}
+                        </span>
 
                         <p className="text-xs leading-loose line-clamp-5 text-[#f1f1f1]">
                             {description}

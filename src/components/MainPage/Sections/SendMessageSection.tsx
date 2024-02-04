@@ -1,5 +1,5 @@
 'use client'
-import { FormEvent, FormEventHandler, useState } from "react"
+import { useState } from "react"
 import { InputField } from "../Elements/InputField"
 import { sendMessageStructure } from "../Elements/interface";
 import { Reveal } from "../util/Reveal";
@@ -19,23 +19,24 @@ export const SendMessageSection: React.FC = () => {
         Message: ''
     });
 
-    const toast = useToast();
+    // const toast = useToast();
 
     function sendEmail(e: any) {
         e.preventDefault();
-        toast({
-            title: 'Account created.',
-            description: "We've created your account for you.",
-            status: 'success',
-            duration: 9000,
-            isClosable: true,
-        });
-
-        emailjs.sendForm('service_jj06kbo', 'template_1bhoiqo', e.target, 'fX2t9sYTlHUQhnQo8')
-            .then((res) => {
-                console.log(res);
-                e.target.reset();
-            })
+        // toast({
+        //     title: 'Account created.',
+        //     description: "We've created your account for you.",
+        //     status: 'success',
+        //     duration: 9000,
+        //     isClosable: true,
+        // });
+        if (sendData.Message == '') {
+            emailjs.sendForm('service_jj06kbo', 'template_1bhoiqo', e.target, 'fX2t9sYTlHUQhnQo8')
+                .then((res) => {
+                    console.log(res);
+                    e.target.reset();
+                })
+        }
     }
 
     return (
@@ -51,13 +52,13 @@ export const SendMessageSection: React.FC = () => {
 
                     <div className="flex flex-col gap-2">
                         <h1 className="font-semibold text-xs text-white">Message</h1>
-                        <textarea name="message_from" className="bg-white/80 rounded-md p-5 text-xs max-w-[43rem] shadow-sm" placeholder="Lorem Ipsum"></textarea>
+                        <textarea name="message_from" className="bg-white/80 rounded-md p-5 text-xs max-w-[20rem] shadow-sm" placeholder="Lorem Ipsum"></textarea>
                     </div>
 
                     <motion.button
                         type="submit"
                         whileTap={{ scale: 0.9 }}
-                        className="bg-black flex justify-center text-white py-5 text-xs rounded-xl font-semibold duration-100 hover:scale-105">
+                        className="bg-black w-[20rem] flex justify-center text-white py-5 text-xs rounded-xl font-semibold duration-100 hover:scale-105">
 
                         <span className="mr-5">Send</span>
                         <Image src={'/svg/send.svg'} alt="" width={15} height={15} className="fill-black" />

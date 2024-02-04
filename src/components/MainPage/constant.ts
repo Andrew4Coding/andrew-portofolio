@@ -61,7 +61,7 @@ export const ProjectsData: projectsDataInterface[] = [
     {
         name: 'HORUS Mobile App',
         description: "I developed this application during the HACKFEST GSC 2023 event, where I took on the role of a Hipster, responsible for designing UI/UX and working on the front-end of the application.",
-        skills: ['dart.svg', 'flutter.svg', 'firebase.svg', 'figma.svg'],
+        skills: ['dart.svg', 'flutter.svg', 'firebase.svg', 'Figma.svg'],
         link: 'https://github.com/Andrew4Coding/horus-frontend',
         image: 'horus.png'
     },
@@ -182,7 +182,7 @@ export const mySkills = [
         skills: [
             {
               name: "Figma",
-              image: 'figma' 
+              image: 'Figma' 
             },
             {
                 name: 'Vite JS',
