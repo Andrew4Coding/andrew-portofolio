@@ -52,13 +52,13 @@ export const SendMessageSection: React.FC = () => {
 
                     <div className="flex flex-col gap-2">
                         <h1 className="font-semibold text-xs text-white">Message</h1>
-                        <textarea name="message_from" className="bg-white/80 rounded-md p-5 text-xs max-w-[20rem] shadow-sm" placeholder="Lorem Ipsum"></textarea>
+                        <textarea name="message_from" className="bg-white/80 rounded-md p-5 text-xs w-full lg:max-w-[20rem] shadow-sm" placeholder="Lorem Ipsum"></textarea>
                     </div>
 
                     <motion.button
                         type="submit"
                         whileTap={{ scale: 0.9 }}
-                        className="bg-black w-[20rem] flex justify-center text-white py-5 text-xs rounded-xl font-semibold duration-100 hover:scale-105">
+                        className="bg-black w-full lg:w-[20rem] flex justify-center text-white py-5 text-xs rounded-xl font-semibold duration-100 hover:scale-105">
 
                         <span className="mr-5">Send</span>
                         <Image src={'/svg/send.svg'} alt="" width={15} height={15} className="fill-black" />
