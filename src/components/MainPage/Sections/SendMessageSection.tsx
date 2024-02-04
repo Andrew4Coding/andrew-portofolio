@@ -31,19 +31,11 @@ export const SendMessageSection: React.FC = () => {
             isClosable: true,
         });
 
-        // emailjs.sendForm('service_jj06kbo', 'template_1bhoiqo', e.target, 'fX2t9sYTlHUQhnQo8')
-        //     .then((res) => {
-        //         console.log(res);
-        //         toast({
-        //             title: 'Account created.',
-        //             description: "We've created your account for you.",
-        //             status: 'success',
-        //             duration: 9000,
-        //             isClosable: true,
-        //         });
-
-        //         e.target.reset();
-        //     })
+        emailjs.sendForm('service_jj06kbo', 'template_1bhoiqo', e.target, 'fX2t9sYTlHUQhnQo8')
+            .then((res) => {
+                console.log(res);
+                e.target.reset();
+            })
     }
 
     return (
