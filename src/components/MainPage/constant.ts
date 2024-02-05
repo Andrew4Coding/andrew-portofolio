@@ -243,6 +243,16 @@ export const myExperiences = [
             'Actively attending all division meetings and discussions',
         ]
     },
+    {
+        title: "PMB Fasilkom UI",
+        description: "Student Coordinator",
+        date: "September 2023 - October 2023",
+        companyLogo: 'pmb.svg',
+        details: [
+            "Serving as a reliable source of PMB Fasilkom UI Informations for all batch 2023 students.",
+            'Organizing batch’s website, social media, and gathering.',
+        ]
+    },
 ];
 
 export const AboutMeImage = [

@@ -24,7 +24,7 @@ export const Reveal: React.FC<revealInterface> = ({ children, className }) => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                exit={{opacity: 0, height: 0}}
+                exit={{opacity: 0, y: -75, transition: {duration: 1}}}
                 transition={{
                     duration: 0.5,
                     delay: 0.25,

@@ -8,11 +8,10 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 export const CarouselCard: React.FC<carouselCardInterface> = ({ text, image }) => {
     const [isClick, setIsClick] = useState(false);
-    const [toolTipVisible, setToolTipVisible] = useState(false);
 
     return (
         <div 
-        className="min-w-full mb-5 lg:min-w-[20%] bg-white/30 shadow-md rounded-xl relative" 
+        className="min-w-full sm:min-w-[50%] md:min-w-[50%] lg:min-w-[25%] mb-5 aspect-video bg-white/30 shadow-md rounded-xl relative" 
         
         onClick={() => {
             setIsClick(!isClick);
@@ -26,7 +25,7 @@ export const CarouselCard: React.FC<carouselCardInterface> = ({ text, image }) =
             setIsClick(false);
         }}
         >
-            <Image src={`/aboutme-images/${image}`} alt="" layout="fill" objectFit="cover" objectPosition="center" className="z-0 rounded-md" />
+            <Image src={`/aboutme-images/${image}`} alt="" layout="fill" objectFit="cover" className="z-0 object-top sm:object-top rounded-md" />
             <AnimatePresence>
                 {
                     isClick && (
@@ -35,7 +34,7 @@ export const CarouselCard: React.FC<carouselCardInterface> = ({ text, image }) =
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             exit={{ opacity: 0 }}
-                            className="lg:hidden flex items-end p-10 w-full bg-gradient-to-b from-black/0 to-black/100 h-full text-xs leading-loose absolute z-200">
+                            className="flex items-end p-10 sm:p-5 w-full bg-gradient-to-b from-black/0 to-black/100 h-full text-xs leading-loose absolute z-200">
                             <p className="text-white">
                                 {text}
                             </p>

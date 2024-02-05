@@ -3,6 +3,7 @@ import { Tooltip } from "@chakra-ui/react"
 import { Link } from 'react-scroll'
 import { sectionData } from "../constant"
 
+
 export const SidebarNavigation: React.FC = () => {
     return (
         <div className="fixed w-full lg:w-fit lg:h-full bottom-0 lg:left-0 flex items-center p-5">
