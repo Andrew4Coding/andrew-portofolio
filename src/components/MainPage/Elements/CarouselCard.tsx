@@ -34,7 +34,7 @@ export const CarouselCard: React.FC<carouselCardInterface> = ({ text, image }) =
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             exit={{ opacity: 0 }}
-                            className="flex items-end p-10 sm:p-5 w-full bg-gradient-to-b from-black/0 to-black/100 h-full text-xs leading-loose absolute z-200">
+                            className="flex items-end p-10 sm:p-5 w-full bg-gradient-to-b from-black/0 to-black/100 h-full text-xs leading-loose absolute z-10">
                             <p className="text-white">
                                 {text}
                             </p>
