@@ -1,4 +1,3 @@
-import { experienceCardInterface } from "./Elements/interface";
 import { projectsDataInterface } from "./interface";
 
 export const socialData = [
@@ -23,22 +22,28 @@ export const socialData = [
 export const sectionData = [
     {
         'name': 'Welcome',
-        'logo': '🏠',
+        'logo': 'home.svg',
         'id': 'welcome'
     },
     {
         'name': 'About Me',
-        'logo': '🙋‍♂️',
-        'id': 'about-me'
+        'logo': 'about.svg',
+        'id': 'about'
+    },
+    {
+        
+        'name': 'Experience',
+        'logo': 'star.svg',
+        'id': 'experience'
     },
     {
         'name': 'Projects',
-        'logo': '💻',
+        'logo': 'projects.svg',
         'id': 'projects'
     },
     {
         'name': 'Skills',
-        'logo': '🤹',
+        'logo': 'skills.svg',
         'id': 'skills'
     },
 ];

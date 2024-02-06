@@ -3,7 +3,7 @@ import { useState } from "react"
 import { InputField } from "../Elements/InputField"
 import { sendMessageStructure } from "../Elements/interface";
 import { Reveal } from "../util/Reveal";
-import { SectionTitle } from "../Elements/SectionTitle";
+import { SectionTitle } from "../../Template/SectionTitle";
 
 import { motion } from 'framer-motion'
 import Image from "next/image";

@@ -2,11 +2,12 @@
 import { ProjectsCard } from "../Elements/ProjectsCard"
 import { ProjectsData } from "../constant"
 import { useEffect, useRef, useState } from "react";
-import { SectionTitle } from "../Elements/SectionTitle";
+import { SectionTitle } from "../../Template/SectionTitle";
 import { Reveal } from "../util/Reveal";
 import { AnimatePresence, motion, useAnimation, useInView } from "framer-motion";
 
 import { scroller } from "react-scroll"
+import { Section } from "@/components/Template/Section";
 
 
 export const ProjectsSection: React.FC = () => {
@@ -28,24 +29,7 @@ export const ProjectsSection: React.FC = () => {
     }, [isShowMore])
 
     return (
-        <motion.section
-            layout
-            ref={ref}
-            variants={{
-                visible: {
-                    height: 'auto', transition: {
-                        duration: 1
-                    }
-                },
-                hidden: {
-                    height: "auto", transition: {
-                        duration: 1
-                    }
-                }
-            }}
-            animate={mainControls}
-            className="min-h-screen p-10 sm:p-24 lg:p-28 flex flex-col gap-5" 
-            id="projects">
+        <Section id="projects">
             <SectionTitle>
                 Projects
             </SectionTitle>
@@ -70,6 +54,6 @@ export const ProjectsSection: React.FC = () => {
                     {isShowMore ? "Show more" : "Show less"}
                 </span>
             </Reveal>
-        </motion.section>
+        </Section>
     )
 }

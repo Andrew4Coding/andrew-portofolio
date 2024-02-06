@@ -4,13 +4,14 @@ import { mySkills } from '../constant'
 import { useState } from 'react'
 import Image from 'next/image'
 import { Reveal } from '../util/Reveal'
-import { SectionTitle } from '../Elements/SectionTitle'
+import { SectionTitle } from '../../Template/SectionTitle'
+import { Section } from '@/components/Template/Section'
 
 export const SkillsSection: React.FC = () => {
     const [selectedTab, setSelectedTab] = useState<number>(0);
 
     return (
-        <section className="min-h-screen p-10 lg:p-40 flex flex-col gap-5" id="skills">
+        <Section id='skills'>
             <SectionTitle>
                 Skills
             </SectionTitle>
@@ -57,6 +58,6 @@ export const SkillsSection: React.FC = () => {
                     </Tab.Group>
                 </div>
             </Reveal>
-        </section>
+        </Section>
     )
 }

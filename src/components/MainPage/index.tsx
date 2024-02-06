@@ -1,4 +1,4 @@
-import { SidebarNavigation } from "./Elements/SideNavigation"
+import { SidebarNavigation } from "./util/SideNavigation"
 import { AboutMeSection } from "./Sections/AboutMeSection"
 import { Background } from "./Sections/Background"
 import { ExperienceSection } from "./Sections/ExperienceSection"
@@ -14,7 +14,7 @@ export const MainPage: React.FC = () => {
         <>
             <Background />
             <div className="relative z-50">
-                {/* <SidebarNavigation /> */}
+                <SidebarNavigation />
                 <ScrollIndicator />
                 <WelcomeSection />
                 <AboutMeSection />

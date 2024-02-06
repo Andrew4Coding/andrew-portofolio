@@ -38,6 +38,6 @@ export interface carouselCardInterface {
 }
 
 export interface sectionTitleInterface {
-    children?: React.ReactNode,
+    children: string,
 }
 

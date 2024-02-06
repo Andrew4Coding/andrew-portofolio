@@ -6,7 +6,7 @@ import { useInView, motion, useAnimation } from "framer-motion";
 
 export const Reveal: React.FC<revealInterface> = ({ children, className }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const isInView = useInView(ref, { once: false });
 
     const mainControls = useAnimation();
 
