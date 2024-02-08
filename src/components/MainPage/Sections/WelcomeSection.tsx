@@ -38,7 +38,7 @@ export const WelcomeSection: React.FC = () => {
             <Link href={""}>
                 <motion.button
                     onClick={() => {
-                        const url = 'http://localhost:3000/CV.pdf';
+                        const url = 'https://andrew-portofolio.vercel.app/CV.pdf';
 
                         const aTag = document.createElement('a');
                         aTag.href = url;
