@@ -14,7 +14,6 @@ export const MainPage: React.FC = () => {
         <>
             <Background />
             <div className="relative z-50">
-                <SidebarNavigation />
                 <ScrollIndicator />
                 <WelcomeSection />
                 <AboutMeSection />

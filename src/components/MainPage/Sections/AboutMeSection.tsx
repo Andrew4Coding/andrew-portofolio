@@ -5,7 +5,6 @@ import { AboutMeImage } from "../constant"
 import { CustomCarousel } from "../util/Carousel"
 import { Reveal } from "../util/Reveal"
 import { Section } from "@/components/Template/Section"
-import { TypingAnimation } from "../util/TypingAnimation"
 
 export const AboutMeSection: React.FC = () => {
     return (
