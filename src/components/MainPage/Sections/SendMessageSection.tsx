@@ -13,6 +13,7 @@ import { useToast } from "@chakra-ui/react";
 import { CustomAnimation } from "../util/CustomAnimation";
 import { socialData } from "../constant";
 import { SocialMediaButton } from "../Elements/SocialMediaButton";
+import { Section } from "@/components/Template/Section";
 
 export const SendMessageSection: React.FC = () => {
     const [sendData, setSendData] = useState<sendMessageStructure>({
@@ -35,11 +36,11 @@ export const SendMessageSection: React.FC = () => {
     }
 
     return (
-        <Reveal>
-            <section className="min-h-screen p-10 lg:p-40 flex flex-col gap-5">
-                <SectionTitle>
-                    Get In Touch
-                </SectionTitle>
+        <Section className="flex-col">
+            <SectionTitle>
+                Get In Touch
+            </SectionTitle>
+            <Reveal>
                 <form className="flex flex-col gap-5" onSubmit={sendEmail}>
                     <InputField name="name_from" title="Name" placeholder="Andrew" data={sendData} setData={setSendData} />
                     <InputField name="email_from" title="Email" placeholder="andrew@gmail.com" data={sendData} setData={setSendData} />
@@ -59,7 +60,7 @@ export const SendMessageSection: React.FC = () => {
                         <Image src={'/svg/send.svg'} alt="" width={15} height={15} className="fill-black" />
                     </motion.button>
                 </form>
-            </section>
-        </Reveal>
+            </Reveal>
+        </Section>
     )
 }
