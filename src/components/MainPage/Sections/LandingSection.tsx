@@ -145,7 +145,7 @@ export const LandingSection: React.FC = () => {
                     />
                 </div>
 
-                <Image src={'/images/intersect.png'} alt="" width={1000} height={1000} className="w-full max-w-[400px] md:max-w-[450px] lg:min-w-[500px] -z-10" />
+                <Image src={'/images/blob.png'} alt="" width={1000} height={1000} className="w-full max-w-[400px] md:max-w-[450px] lg:min-w-[500px] -z-10" />
             </motion.div>
         </Section>
     )
