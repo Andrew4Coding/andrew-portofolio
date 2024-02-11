@@ -44,7 +44,7 @@ export const LandingSection: React.FC = () => {
                     wrapper="span"
                     cursor={false}
                 />
-                <span className="font-semibold text-[#95979D] text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
+                <span className="font-semibold text-[#95979D] text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-loose">
                     I am
                     <span className="font-bold ml-2 text-white drop-shadow-glow">
                         Andrew Devito Aryo
