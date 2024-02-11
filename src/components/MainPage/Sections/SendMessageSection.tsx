@@ -10,6 +10,9 @@ import Image from "next/image";
 
 import emailjs from "@emailjs/browser"
 import { useToast } from "@chakra-ui/react";
+import { CustomAnimation } from "../util/CustomAnimation";
+import { socialData } from "../constant";
+import { SocialMediaButton } from "../Elements/SocialMediaButton";
 
 export const SendMessageSection: React.FC = () => {
     const [sendData, setSendData] = useState<sendMessageStructure>({
@@ -19,17 +22,9 @@ export const SendMessageSection: React.FC = () => {
         Message: ''
     });
 
-    // const toast = useToast();
 
     function sendEmail(e: any) {
         e.preventDefault();
-        // toast({
-        //     title: 'Account created.',
-        //     description: "We've created your account for you.",
-        //     status: 'success',
-        //     duration: 9000,
-        //     isClosable: true,
-        // });
         if (sendData.Message == '') {
             emailjs.sendForm('service_jj06kbo', 'template_1bhoiqo', e.target, 'fX2t9sYTlHUQhnQo8')
                 .then((res) => {

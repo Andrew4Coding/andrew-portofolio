@@ -6,7 +6,7 @@ import { useInView, motion, useAnimation } from "framer-motion";
 
 export const Reveal: React.FC<revealInterface> = ({ children, className }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false });
+    const isInView = useInView(ref, { once: true });
 
     const mainControls = useAnimation();
 
@@ -28,8 +28,6 @@ export const Reveal: React.FC<revealInterface> = ({ children, className }) => {
                 transition={{
                     duration: 0.5,
                     delay: 0.25,
-                    delayChildren: 0.3,
-                    staggerChildren: 0.2
                 }}
                 className={className}
                 ref={ref}

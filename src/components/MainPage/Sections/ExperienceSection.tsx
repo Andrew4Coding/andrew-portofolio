@@ -6,7 +6,7 @@ import { Section } from "@/components/Template/Section"
 
 export const ExperienceSection: React.FC = () => {
     return (
-        <Section id="experience">
+        <Section id="experience" className="flex-col">
                 <SectionTitle>
                     Experience
                 </SectionTitle>

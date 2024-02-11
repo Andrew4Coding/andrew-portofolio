@@ -8,7 +8,7 @@ import { Section } from "@/components/Template/Section"
 
 export const AboutMeSection: React.FC = () => {
     return (
-        <Section id="about">
+        <Section id="about" className="flex-col">
             <SectionTitle> About Me </SectionTitle>
             <Reveal className="flex flex-col gap-5 flex-grow text-white">
                 <div className="leading-8 text-sm text-[#f1f1f1]">

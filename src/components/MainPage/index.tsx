@@ -1,8 +1,9 @@
-import { SidebarNavigation } from "./util/SideNavigation"
 import { AboutMeSection } from "./Sections/AboutMeSection"
 import { Background } from "./Sections/Background"
+import { Cover } from "./Sections/Cover"
 import { ExperienceSection } from "./Sections/ExperienceSection"
 import { Footer } from "./Sections/Footer"
+import { LandingSection } from "./Sections/LandingSection"
 import { ProjectsSection } from "./Sections/ProjectsSection"
 import { SendMessageSection } from "./Sections/SendMessageSection"
 import { SkillsSection } from "./Sections/SkillsSection"
@@ -15,13 +16,16 @@ export const MainPage: React.FC = () => {
             <Background />
             <div className="relative z-50">
                 <ScrollIndicator />
-                <WelcomeSection />
+                <LandingSection />
+                {/* <WelcomeSection /> */}
                 <AboutMeSection />
                 <ExperienceSection />
                 <ProjectsSection />
                 <SkillsSection />
                 <SendMessageSection />
                 <Footer />
+
+                <Cover />
             </div>
         </>
     )

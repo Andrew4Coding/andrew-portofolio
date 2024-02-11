@@ -29,7 +29,7 @@ export const ProjectsSection: React.FC = () => {
     }, [isShowMore])
 
     return (
-        <Section id="projects">
+        <Section id="projects" className="flex-col">
             <SectionTitle>
                 Projects
             </SectionTitle>

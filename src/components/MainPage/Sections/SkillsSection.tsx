@@ -11,7 +11,7 @@ export const SkillsSection: React.FC = () => {
     const [selectedTab, setSelectedTab] = useState<number>(0);
 
     return (
-        <Section id='skills'>
+        <Section id='skills' className='flex-col'>
             <SectionTitle>
                 Skills
             </SectionTitle>
