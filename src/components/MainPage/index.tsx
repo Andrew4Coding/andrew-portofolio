@@ -7,7 +7,6 @@ import { LandingSection } from "./Sections/LandingSection"
 import { ProjectsSection } from "./Sections/ProjectsSection"
 import { SendMessageSection } from "./Sections/SendMessageSection"
 import { SkillsSection } from "./Sections/SkillsSection"
-import { WelcomeSection } from "./Sections/WelcomeSection"
 import { ScrollIndicator } from "./util/ScrollIndicator"
 
 export const MainPage: React.FC = () => {
