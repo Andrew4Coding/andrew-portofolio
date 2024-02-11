@@ -141,7 +141,7 @@ export const LandingSection: React.FC = () => {
                         delay={0.8}
                         classNameContainer="right-0 top-28"
                         classNameChild="w-12 sm:w-20 md:w-12 lg:w-20"
-                        link=""
+                        link="https://twitter.com/andrewryo02"
                     />
                 </div>
 
