@@ -30,7 +30,7 @@ export const ExperienceSection: React.FC = () => {
                     {
                         myExperiences.map(item => {
                             return (
-                                <ExperienceCard item={item}/>
+                                <ExperienceCard item={item} key={item.title}/>
                             )
                         })
                     }
