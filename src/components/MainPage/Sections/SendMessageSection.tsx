@@ -48,7 +48,7 @@ export const SendMessageSection: React.FC = () => {
 
                     <div className="flex flex-col gap-2">
                         <h1 className="font-semibold text-xs text-white">Message</h1>
-                        <textarea name="message_from" className="bg-white/80 rounded-md p-5 text-xs w-full lg:max-w-[20rem] shadow-sm" placeholder="Lorem Ipsum"></textarea>
+                        <textarea name="message_from" className="bg-white rounded-md p-5 text-xs w-full lg:max-w-[20rem] shadow-sm" placeholder="Lorem Ipsum"></textarea>
                     </div>
 
                     <motion.button

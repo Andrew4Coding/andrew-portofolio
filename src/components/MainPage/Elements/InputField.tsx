@@ -6,7 +6,7 @@ export const InputField: React.FC<inputFieldInterface> = ({
     return (
         <div className="flex flex-col gap-2">
             <label className="font-semibold text-xs text-white">{title}</label>
-            <input type="text" name={name} className="bg-white/80 rounded-md p-5 text-xs w-full lg:w-[20rem] shadow-sm" placeholder={placeholder} 
+            <input type="text" name={name} className="bg-white rounded-md p-5 text-xs w-full lg:w-[20rem] shadow-sm" placeholder={placeholder} 
             value={data[title]} onChange={(e) => {
                 setData({
                     ...data,

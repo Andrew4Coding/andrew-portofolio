@@ -39,12 +39,12 @@ export const LandingSection: React.FC = () => {
 
                 className="flex flex-col text-white w-full">
                 <TypeAnimation
-                    className="text-sm md:text-xl"
+                    className="text-sm md:text-xl font-thin"
                     sequence={['Hello, Internet!']}
                     wrapper="span"
                     cursor={false}
                 />
-                <span className="font-semibold text-[#95979D] text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-loose">
+                <span className="font-semibold text-[#95979D] text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                     I am
                     <span className="font-bold ml-2 text-white drop-shadow-glow">
                         Andrew Devito Aryo
@@ -116,14 +116,14 @@ export const LandingSection: React.FC = () => {
                         image="linkedin_button.svg"
                         delay={0.5}
                         classNameContainer="bottom-10 right-10"
-                        classNameChild="w-16 sm:w-24 md:w-12 lg:w-32 xl:w-36"
+                        classNameChild="w-24 sm:w-24 md:w-12 lg:w-32 xl:w-36"
                         link="https://www.linkedin.com/in/andrewaryo"
                     />
 
                     <SocialBubble
                         image="instagram_button.svg"
                         delay={0.6}
-                        classNameContainer="left-10 top-10"
+                        classNameContainer="left-14 top-14"
                         classNameChild="w-12 sm:w-20 md:w-12 lg:w-20"
                         link="https://www.instagram.com/and_ryo02/"
                     />
@@ -131,7 +131,7 @@ export const LandingSection: React.FC = () => {
                     <SocialBubble
                         image="github_button.svg"
                         delay={0.7}
-                        classNameContainer="left-5 bottom-20"
+                        classNameContainer="left-10 bottom-20"
                         classNameChild="w-12 sm:w-20 md:w-12 lg:w-20"
                         link="https://github.com/Andrew4Coding"
                     />
@@ -139,7 +139,7 @@ export const LandingSection: React.FC = () => {
                     <SocialBubble
                         image="twitter_button.svg"
                         delay={0.8}
-                        classNameContainer="right-0 top-28"
+                        classNameContainer="right-10 top-28"
                         classNameChild="w-12 sm:w-20 md:w-12 lg:w-20"
                         link="https://twitter.com/andrewryo02"
                     />

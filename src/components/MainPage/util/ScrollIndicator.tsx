@@ -13,6 +13,6 @@ export const ScrollIndicator: React.FC = () => {
     return (
         <motion.div
             style={{scaleX}}
-            className={`bg-gradient-to-br from-[#86A7FC] to-[#4FC3F6] fixed w-full h-1.5 z-20 rounded-full`} />
+            className={`bg-gradient-to-br from-[#86A7FC] to-[#4FC3F6] fixed w-full h-[0.5rem] z-20 rounded-full`} />
     )
 }

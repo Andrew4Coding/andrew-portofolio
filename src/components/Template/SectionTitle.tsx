@@ -7,7 +7,7 @@ export const SectionTitle: React.FC<sectionTitleInterface> = ({
     children
 }) => {
     return (
-        <Reveal className="text-3xl text-white lg:text-4xl font-bold w-fit pb-3 underline underline-offset-[1rem]">
+        <Reveal className="text-3xl text-white lg:text-5xl font-bold w-fit pb-3">
             {children}
         </Reveal>
     )

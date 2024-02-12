@@ -33,7 +33,7 @@ export const SkillsSection: React.FC = () => {
                             {
                                 mySkills.map((item, index) => {
                                     return (
-                                        <Tab.Panel className='w-full bg-white/80 shadow-lg rounded-lg flex duration-1000 hover:scale-105' key={index}>
+                                        <Tab.Panel className='w-full bg-white shadow-lg rounded-lg flex duration-1000 hover:scale-105' key={index}>
                                             <article className='grid grid-cols-2 lg:grid-cols-4 w-full gap-5 lg:gap-10'>
                                                 {
                                                     item.skills.map(({ name, image }) => {

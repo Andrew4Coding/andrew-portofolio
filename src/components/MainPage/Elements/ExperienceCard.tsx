@@ -1,32 +1,60 @@
+'use client'
 import Image from "next/image"
 import { experienceCardInterface } from "./interface"
+import { Accordion, AccordionButton, AccordionItem, AccordionPanel } from "@chakra-ui/react"
 import { Reveal } from "../util/Reveal"
 
 export const ExperienceCard: React.FC<experienceCardInterface> = ({
     item
 }) => {
-    return (
-        <Reveal className="">
-            <div className="w-full border-l-4 border-white flex">
-                <Image src={`/exp-images/${item.companyLogo}`} alt="" height={20} width={20} className="-left-[1.4rem] top-1.5 relative w-10 h-10 p-2.5 rounded-full shadow-md object-contain bg-white" />
-                <div className="w-full h-full py-2.5 flex flex-col gap-2">
 
-                    <h2 className="font-bold text-lg md:text-xl text-white">{item.title}</h2>
-                    <p className="text-white text-xs leading-loose">
-                        as {item.description}
-                    </p>
-                    <span className="font-semibold text-xs text-white">{item.date}</span>
-                    <ul className="text-xs leading-loose list-disc" style={{}}>
-                        {
-                            item.details.map((item, index) => {
-                                return (
-                                    <li  className="text-white" key={index}>{item}</li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
-            </div>
+    return (
+        <Reveal>
+            <AccordionItem className="bg-white h-fit p-7 lg:p-10 rounded-xl">
+                {
+                    ({ isExpanded }) => (
+                        <>
+                            <AccordionButton>
+                                <div className="flex gap-5 w-full">
+                                    <Image src={`/exp-images/${item.companyLogo}`} alt="" width={50} height={50} className="object-contain w-[2rem] md:min-w-[3rem] drop-shadow-glow" />
+                                    <div className="flex flex-col items-start flex-grow text-left">
+                                        <h2 className="font-bold text-sm lg:text-lg text-left">
+                                            {
+                                                item.title
+                                            }
+                                        </h2>
+                                        <h3 className="font-semibold text-xs lg:text-sm">
+                                            {
+                                                item.description
+                                            }
+                                        </h3>
+                                        <h4 className="text-xs font-medium">
+                                            {
+                                                item.date
+                                            }
+                                        </h4>
+                                    </div>
+                                    <Image src={`/svg/chevron_right.svg`} alt="" width={30} height={30} className={`duration-200 ${!isExpanded ? 'rotate-90' : '-rotate-90'}`} />
+
+                                </div>
+                            </AccordionButton>
+                            <AccordionPanel pb={4} pt={20}>
+                                <div className="pl-5">
+                                    <ul className="text-xs leading-loose list-disc" style={{}}>
+                                        {
+                                            item.details.map((item, index) => {
+                                                return (
+                                                    <li className="" key={index}>{item}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </AccordionPanel>
+                        </>
+                    )
+                }
+            </AccordionItem>
         </Reveal>
     )
 }

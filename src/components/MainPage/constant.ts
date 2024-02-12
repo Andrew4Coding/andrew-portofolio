@@ -209,7 +209,7 @@ export const myExperiences = [
     {
         title: "Betis Fasilkom UI",
         description: "Website Development Staff",
-        date: "September 2023 - Now",
+        date: "Sep 2023 - Now",
         companyLogo: 'betis.svg',
         details: [
             'Participated in the development of the BETIS FASILKOM UI 2024 website',
@@ -218,9 +218,9 @@ export const myExperiences = [
         ]
     },
     {
-        title: "Pekan RISTEK Website Development Open Class",
+        title: "Pekan RISTEK",
         description: "Participant",
-        date: "November 2023",
+        date: "Nov 2023",
         companyLogo: 'ristek.png',
         details: [
             'Progressively learn Javascript frameworks and apply them in personal website development projects',
@@ -230,7 +230,7 @@ export const myExperiences = [
     {
         title: "GDSC UI",
         description: "Member",
-        date: "September 2023 - Now",
+        date: "Sep 2023 - Now",
         companyLogo: 'gdsc.jpg',
         details: [
             'Participated in weekly Study Jam sessions',
@@ -240,7 +240,7 @@ export const myExperiences = [
     {
         title: "BEM Fasilkom UI",
         description: "Intern Staff at PKKM Division",
-        date: "September 2023 - December 2023",
+        date: "Sep 2023 - Dec 2023",
         companyLogo: 'pkkm.png',
         details: [
             'Created a market research survey form to analyze the interests and preference of Fasilkom Students',
@@ -251,7 +251,7 @@ export const myExperiences = [
     {
         title: "PMB Fasilkom UI",
         description: "Student Coordinator",
-        date: "September 2023 - October 2023",
+        date: "Sep 2023 - Oct 2023",
         companyLogo: 'pmb.svg',
         details: [
             "Serving as a reliable source of PMB Fasilkom UI Informations for all batch 2023 students.",
