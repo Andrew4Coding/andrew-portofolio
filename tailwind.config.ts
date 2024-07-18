@@ -8,6 +8,13 @@ const config: Config = {
     "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xs: "375px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -16,6 +23,7 @@ const config: Config = {
       },
       fontFamily: {
         'font-poppins': ['var(--font-poppins)', 'sans-serif'],
+        'font-manrope': ['var(--font-manrope)', 'sans-serif'],
       }
     },
   },
