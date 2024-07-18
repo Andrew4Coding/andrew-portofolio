@@ -1,10 +1,9 @@
 'use client'
 
 import Button from "@/components/Button";
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Download } from "lucide-react";
 import Image from "next/image";
-import { useEffect } from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import { SocialBubble } from './components/socialbubble';
 
@@ -32,32 +31,12 @@ export default function LandingModule() {
         delaySpeed: 8000,
     });
 
-    const x = useMotionValue(0);
-    const y = useMotionValue(0);
-
-    const rotateX = useTransform(y, [0, window.innerHeight], [15, -15]);
-    const rotateY = useTransform(x, [0, window.innerWidth], [-15, 15]);
-
-    useEffect(() => {
-        const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
-            x.set(event.clientX);
-            y.set(event.clientY);
-        };
-
-        window.addEventListener('mousemove', handleMouseMove);
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, [x, y]);
-
     return (
         <section className="px-10 lg:px-32 w-full h-fit flex flex-col lg:flex-row-reverse gap-10">
             <div
                 className="w-full flex justify-center"
             >
                 <motion.div
-                    // style={{ rotateX, rotateY }}
                     className="relative w-fit lg:w-full flex flex-col justify-center items-center"
                 >
                     <div className="z-50">
