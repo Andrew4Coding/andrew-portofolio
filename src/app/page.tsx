@@ -1,4 +1,4 @@
-import NavigationBar from "@/components/navbar";
+import NavigationBar from "@/components/Navbar";
 import { ScrollIndicator } from "@/components/scroll-indicator";
 import LandingModule from "@/modules/1_Landing";
 import AboutMeModule from "@/modules/2_AboutMe";

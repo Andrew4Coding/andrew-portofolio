@@ -1,6 +1,6 @@
 'use client'
 
-import Button from "@/components/button";
+import Button from "@/components/Button";
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { Download } from "lucide-react";
 import Image from "next/image";

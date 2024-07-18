@@ -1,5 +1,5 @@
 'use client'
-import Button from "@/components/button";
+import Button from "@/components/Button";
 import Input from "@/components/input";
 import Toast from "@/components/toast";
 import { titleVariants } from "@/utils/animation-variants";
