@@ -16,8 +16,9 @@ interface emailProps {
 
 
 export default function ContactModule() {
-    const [openSuccessToast, setOpenSuccessToast] = useState(false);
-    const [openErrorToast, setOpenErrorToast] = useState(false);
+    const [openLoadingToast, setOpenLoadingToast] = useState(false);
+
+    const [toastText, setToastText] = useState<string | null>(null);
 
     const [sendData, setSendData] = useState<emailProps>({
         name: '',
@@ -28,16 +29,22 @@ export default function ContactModule() {
 
 
     function sendEmail(e: any) {
+        setOpenLoadingToast(true);
         e.preventDefault();
         if (sendData.message == '') {
             emailjs.sendForm('service_jj06kbo', 'template_1bhoiqo', e.target, 'fX2t9sYTlHUQhnQo8')
                 .then((res) => {
-                    console.log(res);
-                    setOpenSuccessToast(true);
+                    setOpenLoadingToast(false);
+                    setToastText('Email sent successfully!');
+                    
+                    // Set Cookies
+                    const datePlusFiveMinute = new Date(new Date().getTime() + 5 * 60 * 1000);
+                    localStorage.setItem('nextEmailLimit', datePlusFiveMinute.toString());
+
                     e.target.reset();
                 }).catch((err) => {
-                    console.log(err);
-                    setOpenErrorToast(true);
+                    setOpenLoadingToast(false);
+                    setToastText('An error occured, please try again later!');
                 });
         }
     }
@@ -52,9 +59,17 @@ export default function ContactModule() {
                 className="font-extrabold text-3xl lg:text-5xl text-white">contact me</motion.h2>
             <form method="post" className="flex flex-col md:flex-row gap-5" onSubmit={(e) => {
                 e.preventDefault();
+                const nextEmailLimit = localStorage.getItem('nextEmailLimit');
+                const now = new Date();
+
+                if (nextEmailLimit && new Date(nextEmailLimit) > now) {
+                    setToastText('You can only send an email every 5 minutes!');
+                    return
+                }
+
                 // If name, email, and subject are empty, then alert
                 if (sendData.name == '' || sendData.email == '' || sendData.subject == '') {
-                    setOpenErrorToast(true);
+                    setToastText('Please fill in the required fields!');
                 }
                 else {
                     sendEmail(e);
@@ -84,19 +99,19 @@ export default function ContactModule() {
                 </Button>
             </form>
             {
-                openSuccessToast &&
+                openLoadingToast &&
                 <Toast
-                    message="Your message has been sent!"
-                    onClose={() => setOpenSuccessToast(false)}
+                    message="Loading..."
+                    onClose={() => setOpenLoadingToast(false)}
                     show
                     duration={2000}
                 />
             }
             {
-                openErrorToast &&
+                toastText &&
                 <Toast
-                    message="Please fill in the required fields!"
-                    onClose={() => setOpenErrorToast(false)}
+                    message={toastText}
+                    onClose={() => setToastText(null)}
                     show
                     duration={2000}
                 />
