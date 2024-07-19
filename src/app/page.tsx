@@ -20,7 +20,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           priority
-          className="opacity-55"
+          className="opacity-55 animate-pulse"
         />
       </div>
       <div className="py-16 w-full h-screen relative flex flex-col">
