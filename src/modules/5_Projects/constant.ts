@@ -30,7 +30,12 @@ export const projectsData: projectDataProps[] = [
         title: "BETIS Fasilkom UI 2023 Oprec Website",
         description: "I developed this application during the HACKFEST GSC 2023 event, where I took on the role of a Hipster, responsible for designing UI/UX and working on the front-end of the application.",
         image: "betis-oprec.png",
-    }
+    },
+    {
+        title: "MXGO Tourism Mobile App",
+        description: "This application was created as a submission for a competition celebrating the MXGP 2022 event in Samota, Sumbawa, West Nusa Tenggara. I successfully secured 1st place in the general category.",
+        image: "mxgo.png",
+    },
 ]
 
 export interface projectDataProps {
