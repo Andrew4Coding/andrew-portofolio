@@ -31,8 +31,8 @@ export default function RootLayout({
         />
       </Head>
       <body className={`${manrope.className} ${manrope.variable} bg-black`}>
-
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }

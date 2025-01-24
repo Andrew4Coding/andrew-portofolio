@@ -1,11 +1,11 @@
-import NavigationBar from "@/components/Navbar";
-import { ScrollIndicator } from "@/components/scroll-indicator";
-import LandingModule from "@/modules/1_Landing";
-import AboutMeModule from "@/modules/2_AboutMe";
-import { SkillsModule } from "@/modules/3_Skills";
-import ExperienceModule from "@/modules/4_Experiences";
-import { ProjectsModule } from "@/modules/5_Projects";
-import ContactModule from "@/modules/6_Contact";
+import NavigationBar from "@/components/navbar";
+import { ScrollIndicator } from "@/components/scroll";
+import LandingModule from "@/modules/HeroModule";
+import AboutMeModule from "@/modules/AboutModule";
+import { SkillsModule } from "@/modules/SkillModule";
+import ExperienceModule from "@/modules/ExperienceModule";
+import { ProjectsModule } from "@/modules/ProjectModule";
+import ContactModule from "@/modules/ContactModule";
 import Image from "next/image";
 
 export default function Home() {
