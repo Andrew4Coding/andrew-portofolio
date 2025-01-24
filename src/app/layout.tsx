@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Manrope, Poppins } from "next/font/google";
+import { Manrope } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
-import Image from "next/image";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -11,8 +10,21 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Andrew Portfolio",
-  description: "Made With Love by Andrew",
+  title: "Andrew Portfolio | Full Stack Developer",
+  description: "Portfolio of Andrew, a Full Stack Developer specializing in web development, React, TypeScript, and modern JavaScript technologies. View my projects and experience.",
+  keywords: ["Full Stack Developer", "Web Development", "React", "TypeScript", "JavaScript", "Portfolio", "Software Engineer"],
+  authors: [{ name: "Andrew" }],
+  openGraph: {
+    title: "Andrew Portfolio | Full Stack Developer",
+    description: "Portfolio of Andrew, a Full Stack Developer specializing in web development.",
+    type: "website",
+    locale: "en_US",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
